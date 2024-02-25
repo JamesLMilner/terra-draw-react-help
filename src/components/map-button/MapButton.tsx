@@ -1,12 +1,10 @@
 import { h } from "preact";
 import style from "./style.css";
-import { titleCase } from "../../utils/casing";
 
 const MapButton = ({
   mode,
   currentMode,
   changeMode,
-  label,
   hiddenOnTouch,
 }: {
   mode: string;
@@ -33,7 +31,7 @@ const MapButton = ({
         changeMode(mode);
       }}
     >
-      {label ? label : titleCase(mode)}
+      {mode}
     </button>
   );
 };

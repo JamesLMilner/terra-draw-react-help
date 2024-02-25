@@ -34,6 +34,7 @@ const Home = ({ features }: { features: GeoJSONStoreFeatures[] }) => {
     if (map) {
       const terraDraw = setupDraw(map, L);
       terraDraw.start();
+      console.log('starting terra draw instance')
       return terraDraw;
     }
   }, [map]);

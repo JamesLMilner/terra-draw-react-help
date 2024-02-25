@@ -40,7 +40,7 @@ const App = () => {
       ])
     }, 5000)
 
-  })
+  }, [])
 
   return <div id="app">
     <Home features={features} />

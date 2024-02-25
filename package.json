@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "NODE_OPTIONS='--openssl-legacy-provider' preact build --no-prerender --dest docs && echo 'terradraw.io' > docs/CNAME",
+    "build": "NODE_OPTIONS='--openssl-legacy-provider' preact build --no-prerender --dest docs",
     "serve": "sirv build --cors --single",
     "dev": "NODE_OPTIONS='--openssl-legacy-provider' preact watch",
     "lint": "eslint src",
